@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: dzaky.CalculatorTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.017 s <<< FAILURE! -- in dzaky.CalculatorTest
+dzaky.CalculatorTest.testDivideFailed -- Time elapsed: 0.007 s <<< ERROR!
+java.lang.ArithmeticException: / by zero
+	at dzaky.Calculator.division(Calculator.java:14)
+	at dzaky.CalculatorTest.testDivideFailed(CalculatorTest.java:21)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
