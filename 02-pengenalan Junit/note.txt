@@ -1,0 +1,5 @@
+JUNIT
+    - JUnit adalah test framework yang paling populer di Java
+    - Saat ini versi terbaru JUnit adalah versi 5
+    - Junit 5 membutuhkan java minimal versi 8
+    - https://junit.org/
