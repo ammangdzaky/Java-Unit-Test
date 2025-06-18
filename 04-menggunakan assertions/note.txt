@@ -1,0 +1,37 @@
+ASSERTIONS
+    - saat membuat test, kita harus memastikan bahwa test tersebut sesuai dengan ekspetasi yang kita inginkan
+    - jika manual, kita bisa melakukan pengecekan if else, namun itu tidak direkomendasikan
+    - JUnit memiliki fitur untuk melakukan assertions, yaitu memastikan bahwa unit test sesuai dengan kondisi yang kita inginkan
+    - Assertions di JUnit di representasikan dalam class Assertions, dan didalamnya terdapat banyak sekali function static
+
+
+MACAM-MACAM ASSERTIONS
+    assertEquals(expected, actual)
+        → digunakan untuk memastikan bahwa dua nilai sama
+    assertNotEquals(unexpected, actual)
+        → digunakan untuk memastikan bahwa dua nilai tidak sama
+    assertTrue(condition)
+        → digunakan untuk memastikan bahwa kondisi bernilai true
+    assertFalse(condition)
+        → digunakan untuk memastikan bahwa kondisi bernilai false
+    assertThrows(Exception.class, executable)
+        → digunakan untuk memastikan bahwa kode melempar exception tertentu
+    assertDoesNotThrow(executable)
+        → digunakan untuk memastikan bahwa kode tidak melempar exception
+    assertNull(object)
+        → digunakan untuk memastikan bahwa objek bernilai null
+    assertNotNull(object)
+        → digunakan untuk memastikan bahwa objek tidak null
+    assertArrayEquals(expectedArray, actualArray)
+        → digunakan untuk memastikan bahwa dua array memiliki isi dan urutan yang sama
+    assertSame(expected, actual)
+        → digunakan untuk memastikan bahwa dua objek adalah referensi yang sama
+    assertNotSame(unexpected, actual)
+        → digunakan untuk memastikan bahwa dua objek adalah referensi yang berbeda
+    semua fungsi assertions dapat ditambahkan pesan tambahan sebagai parameter ketiga untuk memberi keterangan jika test gagal
+
+
+MENGAGALKAN TEST
+    - kadang dalam membuat unit test, kita tidak hanya ingin mengetest kasus sukses atau gagal
+    - ada kalanya kita ingin mengetes sebuah exception misalnya
+    - assertions bisa digunakan untuk mengecek apakah sebuah exception terjadi

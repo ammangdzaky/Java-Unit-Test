@@ -11,6 +11,10 @@ public class Calculator {
     }
 
     public int division(int a,int b){
-        return a/b;
+        if(b == 0){
+            throw new IllegalArgumentException("Division by zero");
+        } else{
+            return a/b;
+        }
     }
 }
