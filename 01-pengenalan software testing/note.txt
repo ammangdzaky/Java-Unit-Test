@@ -1,0 +1,15 @@
+PENGENALAN SOFTWARE TESTING
+    - Software testing adalah salah satu disiplin ilmu dalam software engineering
+    - Tujuan utama dari software testing adalah memastikan kualitas kode dan aplikasi kita baik
+    - Ilmu untuk software testing sendiri sangatlah lua, pada materi ini kita hanya akan fokus ke unit testing
+
+PYRAMID TEST
+    - UI test -> menguji keseluruhan aplikasi (testingnya sedikit aja karena biaya mahal dan runtimenya lambat)
+    - Service Test -> menguji backend aplikasi (menengah lah)
+    - Unit Test -> menguji layer layer di backend (testingnya banyak karena biaya murah dan runtime cepat)
+
+UNIT TEST
+    - Unit test akan fokus menguji bagian kode program terkecil, biasanya menguji sebuah method
+    - Unit test biasanya dibuat kecil dan cepat, oleh karena itu biasanya kode unit test lebih banyak dari kode program aslinya, karena
+    semua skenarion pengujian (skenario sukses, gagal, dll) akan dicoba di unit test ini
+    - Unit test bisa digunakan sebagai cara untuk meningkatkan kualitas kode program kita
