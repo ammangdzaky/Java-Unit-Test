@@ -1,0 +1,9 @@
+MENGUBAH NAMA TEST
+    - Kadang agak sulit membuat nama function yang merepresentasikan kasus test nya
+    - Jika kita ingin menambahkan deskripsi untuk tiap test, kita bisa menggunakan annonation @DisplayName
+    - dengan menggunakan annonation @DisplayName, kita bisa menambahkan deskripsi unit testnya
+
+MENGGUNAKAN DISPLAY NAME GENERATOR
+    - JUnit mendukung pembuatan DisplayName secara otomatis menggunakan generator
+    - yang perlu kita lakukan adalah membuat class turunan dari interface DisplayNameGenerator, lalu menambahkan annotation
+    @DisplayNameGeneration di test classnya
