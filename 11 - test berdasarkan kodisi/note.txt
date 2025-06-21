@@ -1,0 +1,29 @@
+TEST BERDASARKAN KONDISI
+    - sebenarnya kita bisa menggunakan Assumptions untuk menjalankan unit test berdasarkan kondisi tertentu
+    - namun JUnit menyediakan fitur yang lebih mudah untuk pengecekan beberapa kondisi, seperti kondisi sistem operasi, versi java,
+    system property atau environment variable
+    - ini lebih mudah dibandingkan menggunakan assumptions
+
+KONDISI SISTEM OPERASI
+    - untuk kondisi sistem operasi, kita bisa menggunakan beberapa annotation
+    - @EnabledOnOs digunakan untuk penanda bahwa unit test boleh berjalan di sistem operasi tang ditentukan
+    - @DisabledOnOs digunakan untuk pendanda bahwa unit test tidak boleh berjalan di sistem operasi yang ditentukan
+
+KONDISI VERSI JAVA
+    -untuk kondisi versi java yang kita gunakan, kita bisa menggunakan beberappa annotation
+    - @EnabledOnJre digunakan untuk penanda bahwa unit test boleh berjalan di Java versi tertentu
+    - @DisabledOnJre digunakan untuk penanda bahwa unit test tidak boleh berjalan di Java versi tertenru
+    - @EnabledForJreRange digunakan untuk penanda bahwa unit test boleh berjalan di range Java versi tertentu
+    - @DisabledForJreRange digunakan untuk penanda bahwa unit test tidak boleh berjalan di range Java versi tertentu
+
+KONDISI SYSTEM PROPERTY
+    - untuk kondisi nilai dari system property, kita bisa menggunakan beberapa annotation
+    - @EnabledIfSystemProperty untuk penanda bahwa unit test boleh berjalan jika system property sesui dengan yang ditentukan
+    - @DisabledIfSystemProperty untuk penanda bahwa unit test tidak boleh berjalan jika system property sesui dengan yang ditentukan
+    - jika kondisinya lebih dari satu, kita bisa menggunaklan @EnabledIfSystemProperties dan @DisabledIfSystemProperties
+
+KONDISI ENVIRONMENT VARIABLE
+    - untuk kondisi nilai dari environmetn variable, kita bisa menngguanakan beberapa annotation
+    - @EnabledIfEnvironmentVariable untuk penanda bahwa unit test boleh berjalan jika environment variable sesaui dengan yg ditentukan
+    - @DisabledIfEnvironmentVariable untuk penanda bahwa unit test tidak boleh berjalan jika environment variable sesaui dengan yg ditentukan
+    - jika kondisinya lebih dari satu, kita bisa menggunaklan @EnabledIfEnvironmentVariables dan @DisabledIfEnvironmentVariables

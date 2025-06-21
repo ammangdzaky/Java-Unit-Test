@@ -1,3 +1,5 @@
 dzaky\CalculatorTest.class
-dzaky\AppTest.class
 dzaky\generator\SimpleDisplayName.class
+dzaky\ConditionTest.class
+dzaky\IntegrationTest.class
+dzaky\AppTest.class

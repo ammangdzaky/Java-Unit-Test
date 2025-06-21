@@ -1,0 +1,10 @@
+MENGGUNAKAN TAG
+    - call atau function unit test bisa kita tambahkan tag (tanda) dengan menggunakan annotation @Tag
+    - dengan menambahkan tag ke dalam unit test, kita bisa fleksibel ketika menjalankan unit test, bisa mmilih tag mana yang mau di include
+    atau di exclude
+    - jika kita menambahkan tag di class unit test, secara otomatis semua function unit test di dalam class tersebut akan memiliki tag tersebut
+    - jika kita menambahkan beberapa tag di suatu class atau fnction unit test, kita bisa menggunakan annotation @Tags
+
+
+MEMILIH TAG DENGAN MAVEN
+    mvn test -Dgroups=tag1,tag2

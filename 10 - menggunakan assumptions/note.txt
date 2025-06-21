@@ -1,0 +1,5 @@
+MENGGUNAKAN ASSUMPTIONS
+    - sebelumnya kita sudah tahu jika kita ngin membatalkan test, kita bisa menggunakan exception TestAbortException
+    - namun sebenarnya ada cara yang lebih mudah, yaitu dengan menggunakan Assumptions
+    - penggunakan assumptions mirip seperti Assertions, jika nilainya tidak sama, maka function Assumptions akan thrown TestAbortException,
+    sehingga secara otomatis akan membatalkan unit test yang sedang berjalan

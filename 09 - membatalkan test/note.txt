@@ -1,0 +1,4 @@
+MEMBATALKAN TEST
+    - kadang kita ingin membatalkan unit test ketika kondisi tertentu terjadi
+    - untuk membatalkan, kita bisa menggunakan exception TestAbortedException
+    - jika JUnit mendapatkan exception TestAbortedException, secara otomatis test tersebut akan dibatalkan
