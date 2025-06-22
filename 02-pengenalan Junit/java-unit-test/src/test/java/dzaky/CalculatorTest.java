@@ -5,6 +5,8 @@ import static org.junit.jupiter.api.Assumptions.*;
 
 import dzaky.generator.SimpleDisplayName;
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 import org.opentest4j.TestAbortedException;
 
 //@DisplayNameGeneration(value = SimpleDisplayName.class)
@@ -97,5 +99,19 @@ public class CalculatorTest {
             assumeTrue("DEV".equals(System.getenv("PROFILE")));
 
         // unit test untuk dev
+    }
+
+
+    // test dengan parameter
+    @DisplayName("test Calculator")
+    @ParameterizedTest(name = "{displayName} with parameter {0} " )
+    @ValueSource(ints = {1,3,6,9})
+    public void testWithParameter(int value){
+        int expected = value + value;
+        int result = kalkulator.add(value,value);
+
+        assertEquals(expected, result);
+
+        System.out.println(result);
     }
 }

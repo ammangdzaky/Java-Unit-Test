@@ -1,0 +1,3 @@
+INFORMASI TEST
+    - walaupun mungkin jarang kita gunakan, tapi kita juga bisa mendapatkan informasi test yang sedang berjalan menggunakan interface TestInfo
+    - kita bisa menggunakan TestInfo sebagai parameter di function unit test

@@ -1,0 +1,10 @@
+TEST BERULANG
+    - JUnit mendukung eksekusi unit test berulang kali sesuai dengan jumlah yang kita tentukan
+    - untuk mengulang eksekusi unit test, kita bisa menggunakan annotation @RepeatedTest di method unit test nya
+    - @RepeatedTest juga bisa digunakan untuk mengubah detail nama testnya, dan kita bisa menggunakan value {displayName} untuk mendapatkan
+    display name, {currentRepetition} untuk mendapatkan perulangan ke beberapa saat ini, dan {totalRepetitions} untuk mendapatkan total perulangannya
+
+
+INFORMASI PERULANGAN
+    - @RepatedTest juga memiliki object RepetitionInfo yg di inject oleh class RepetitionInfoParameterResolver, sehingga kita bisa mendapatkan
+    informasi RepetitionInfo melalui parameetr function unit test
